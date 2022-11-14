@@ -17,6 +17,7 @@ body {
 .row-card {
   max-width: 162rem;
   height: 7rem;
+  padding: 1.4rem 3.2rem;
   background-color: #282737;
   display: flex;
   justify-content: space-around;
@@ -25,6 +26,7 @@ body {
 /* Email */
 .row-card-email {
   font-size: 1.4rem;
+  width: 13rem;
 }
 /* NFT */
 .row-card-nft {
@@ -66,10 +68,26 @@ body {
 
 /* Status */
 .row-card-status {
+  width: 13rem;
   font-size: 1.3rem;
-  background-color: #1a63f4;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.row-card-status__pending {
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  background-color: #db312b;
+}
+.row-card-status__claimed {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #4c9610;
+}
+.row-card-status__yet {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #1a63f4;
 }
 /* Date */
 .row-card-date {

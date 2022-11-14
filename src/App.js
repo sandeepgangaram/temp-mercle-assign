@@ -1,9 +1,10 @@
-import RowCard from "./components/RowCard";
+import RowContainer from "./components/RowContainer";
+import { allData } from "./allData";
 
 function App() {
   return (
     <div>
-      <RowCard />
+      <RowContainer allData={allData} />
     </div>
   );
 }
