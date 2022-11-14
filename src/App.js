@@ -1,5 +1,11 @@
+import RowCard from "./components/RowCard";
+
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <RowCard />
+    </div>
+  );
 }
 
 export default App;
