@@ -1,3 +1,5 @@
+import Tooltip from "./Tooltip";
+
 const RowCard = ({ data }) => {
   const { email, nft, description, accessories, status, date } = data;
   return (
@@ -12,7 +14,17 @@ const RowCard = ({ data }) => {
       </div>
       <div className="row-card-acs">
         {accessories.map((item, i) => {
-          if (i <= 1) return <span key={i}>{item}</span>;
+          if (i <= 1)
+            return (
+              <Tooltip
+                key={i}
+                title="Accessories"
+                description={item.description}
+                message={item.message}
+              >
+                <span>{item.description}</span>
+              </Tooltip>
+            );
           if (i === 2) return <span key={i}>+{accessories.length - 2}</span>;
         })}
       </div>
@@ -27,7 +39,6 @@ const RowCard = ({ data }) => {
           <span className="row-card-status__claimed">{status}</span>
         )}
       </div>
-
       <div className="row-card-date">{date}</div>
     </div>
   );
