@@ -26,6 +26,7 @@ const RowCard = ({ data }) => {
               </Tooltip>
             );
           if (i === 2) return <span key={i}>+{accessories.length - 2}</span>;
+          return false;
         })}
       </div>
       <div className="row-card-status">
