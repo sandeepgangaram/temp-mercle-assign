@@ -14,7 +14,7 @@ body {
   color: #e0e0e0;
 }
 #root {
-  padding: 7rem 3rem;
+  padding: 6rem 1.5rem;
 }
 
 .row-container {
@@ -23,20 +23,19 @@ body {
 .row-card {
   max-width: 162rem;
   height: 7rem;
-  padding: 1.4rem 3.2rem;
+  padding: 1rem;
   background-color: #282737;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.3rem;
 }
 /* Email */
 .row-card-email {
-  font-size: 1.4rem;
   width: 13rem;
 }
 /* NFT */
 .row-card-nft {
-  font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +48,6 @@ body {
 
 /* Description */
 .row-card-desc {
-  font-size: 1.4rem;
   width: 30rem;
   line-height: 2.2rem;
 }
@@ -98,7 +96,6 @@ body {
 }
 /* Date */
 .row-card-date {
-  font-size: 1.4rem;
 }
 
 /* Tooltip */
